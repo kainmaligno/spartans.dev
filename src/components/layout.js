@@ -32,10 +32,12 @@ const Layout = ({ children }) => (
             maxWidth: 960,
             padding: `0px 1.0875rem 1.45rem`,
             paddingTop: 0,
+            backgroundColor:'#020202',
+            color:'#CF3D28'
           }}
         >
           <main>{children}</main>
-          <footer>
+          <footer style={{backgroundColor:'#020202', color:'#CF3D28'}}>
             © {new Date().getFullYear()}, Built with
             {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a>
