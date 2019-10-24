@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import styled from 'styled-components'
 //assets
 import spartan from '../images/spartan.png'
-import rain from '../images/rain.png'
+import rain from '../images/Rain.png'
 
 const Landing = styled.div`
 background-image:url(${spartan});
