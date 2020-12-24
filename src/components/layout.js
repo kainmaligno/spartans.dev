@@ -38,15 +38,17 @@ const Layout = ({ children }) => (
         >
           <main>{children}</main>
           <footer style={{ backgroundColor: "#020202", color: "#CF3D28" }}>
-            © {new Date().getFullYear()}, Built with
-            {` `}
             <div>
               <h1>Hola estamos trabajando para la pagina </h1>
               <div>
                 <ul style={{ color: "#CF3D28" }}>
                   <li>
                     Si quieres contactar con nosotros puedes acudir al{" "}
-                    <a href="tel:5586824354" title="Contacto Spartans dev">
+                    <a
+                      className="links"
+                      href="tel:5586824354"
+                      title="Contacto Spartans dev"
+                    >
                       <p>503-2528-8600</p>
                     </a>
                   </li>
@@ -54,6 +56,7 @@ const Layout = ({ children }) => (
                     O vistita mi pagina Personal
                     <br />
                     <a
+                      className="links"
                       href="https://www.salemm.dev"
                       title=" Salvador Emmanuel Juarez Granados"
                       target="_blank"
@@ -65,7 +68,11 @@ const Layout = ({ children }) => (
                 </ul>
               </div>
             </div>
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
+            © {new Date().getFullYear()},Construimos con
+            {` `}
+            <a className="links" href="https://www.gatsbyjs.org">
+              Gatsby
+            </a>
           </footer>
         </div>
       </>
